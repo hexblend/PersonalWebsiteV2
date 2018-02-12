@@ -1,13 +1,14 @@
-Modern Personal Portfolio Website
+Modern Personal Website
 =============================
 
-A dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
+This website is made using Jekyll, styled with Sass and scripted with Vanilla Javascript. It's a dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
+
 ![](preview.jpg)
 
 
 ## System Preparation
 
-To use this starter project, you'll need the following things installed on your machine.
+In order to use this project, you'll need the following things installed on your machine.
 
 1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
 2. [NodeJS](http://nodejs.org) - use the installer.

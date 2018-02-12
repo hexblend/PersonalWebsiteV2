@@ -5,13 +5,17 @@ title: Blog |
 
 {% include blogHeader.html %}
 
-<!-- <div class="blog-wrapper">
-  <div id="home">
-    <h1>Blog Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</div> -->
+<div class="blog-wrapper">
+
+  {% for post in site.posts %}
+  <a href="{{ post.url }}"><div class="postprev-container">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content | strip_html | truncatewords: 60 }}</p>
+    <div class="postprev-footer">
+      <p id="readmore">Read more</p>
+      <p>{{ post.date | date_to_string }}</p>
+    </div>
+  </div></a>
+  {% endfor %}
+
+</div>

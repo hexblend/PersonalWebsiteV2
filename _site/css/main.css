@@ -306,6 +306,18 @@ body {
   line-height: 1.3em;
   color: #7d7d7d; }
 
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus {
+  text-decoration: none; }
+
+a:hover, a:active {
+  text-decoration: none; }
+
 footer {
   text-align: center;
   position: absolute;
@@ -405,12 +417,13 @@ header.blog-header {
       margin: 0;
       padding: 0;
       color: #fff;
-      font-size: 2em; }
+      font-size: 2.2em; }
     header.blog-header .left-titles h2 {
       margin: 0;
       padding: 5px 0 0 0;
       color: #6aff46;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 1.5em; }
   header.blog-header .right-description p {
     font-size: 1.2em;
     font-weight: 200;
@@ -421,3 +434,60 @@ header.blog-header {
     @media (max-width: 605px) {
       header.blog-header .right-description p {
         font-size: 1.1em; } }
+
+.blog-wrapper {
+  padding: 0 150px;
+  margin-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  transition: .3s ease-in-out; }
+  @media (max-width: 1150px) {
+    .blog-wrapper {
+      padding: 0 85px; } }
+  @media (max-width: 605px) {
+    .blog-wrapper {
+      padding: 0 15px; } }
+  .blog-wrapper a {
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    margin: 10px 10px 20px 10px;
+    width: 45%; }
+    .blog-wrapper a:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    .blog-wrapper a:hover #readmore {
+      color: #fff;
+      border-bottom: 1px solid #fff; }
+    @media (max-width: 990px) {
+      .blog-wrapper a {
+        width: 100%; } }
+    .blog-wrapper a .postprev-container {
+      background: #393743;
+      text-decoration: none;
+      color: #7d7d7d;
+      padding: 15px 20px 10px 20px;
+      border-radius: 5px; }
+      .blog-wrapper a .postprev-container h3 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.35em; }
+      .blog-wrapper a .postprev-container p {
+        font-weight: 200;
+        letter-spacing: 0;
+        text-align: justify; }
+      .blog-wrapper a .postprev-container .postprev-footer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .blog-wrapper a .postprev-container .postprev-footer p:first-child {
+          color: #7d7d7d;
+          border-bottom: 1px solid #393743;
+          transition: .2s ease-in-out; }

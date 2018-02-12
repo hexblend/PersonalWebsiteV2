@@ -1,3 +1,4 @@
+// Body
 body {
   background: $body-bg;
   width: 100%;
@@ -7,3 +8,9 @@ body {
   line-height: 1.3em;
   color: $grey;
 }
+
+// Links
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none;}
