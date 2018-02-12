@@ -1,5 +1,6 @@
 footer{
   text-align: center;
+  // margin-top: 100px;
   position: absolute;
   bottom: 0; right: 0; left: 0;
 
@@ -10,7 +11,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    @media(max-width: 600px){
+    @media(max-width: 605px){
       flex-direction: column;
       height: auto;
       padding: 0;
@@ -20,7 +21,7 @@ footer{
       max-width: 260px;
       text-align: left;
       font-weight: 200;
-      @media(max-width: 600px){
+      @media(max-width: 605px){
         text-align: center;
       }
     }
@@ -37,8 +38,8 @@ footer{
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      transition: .2s ease-in-out;
-      @media(max-width: 600px){
+      transition: .3s ease-in-out;
+      @media(max-width: 605px){
         margin-bottom: 10px;
       }
 

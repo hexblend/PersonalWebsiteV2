@@ -322,7 +322,7 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     padding: 0 100px; }
-    @media (max-width: 600px) {
+    @media (max-width: 605px) {
       footer .website-desc {
         -ms-flex-direction: column;
             flex-direction: column;
@@ -332,7 +332,7 @@ footer {
       max-width: 260px;
       text-align: left;
       font-weight: 200; }
-      @media (max-width: 600px) {
+      @media (max-width: 605px) {
         footer .website-desc p {
           text-align: center; } }
     footer .website-desc a {
@@ -351,8 +351,8 @@ footer {
           justify-content: center;
       -ms-flex-direction: column;
           flex-direction: column;
-      transition: .2s ease-in-out; }
-      @media (max-width: 600px) {
+      transition: .3s ease-in-out; }
+      @media (max-width: 605px) {
         footer .website-desc a {
           margin-bottom: 10px; } }
       footer .website-desc a:hover {
@@ -370,3 +370,54 @@ footer {
     footer .copyright-container p {
       color: #f2f2f2;
       font-weight: 200; }
+
+header.blog-header {
+  height: 180px;
+  background: url("../img/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 100px; }
+  @media (max-width: 605px) {
+    header.blog-header {
+      text-align: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      height: auto;
+      padding: 20px 0; } }
+  header.blog-header .left-titles {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    line-height: 2em;
+    transition: .3s ease-in-out; }
+    @media (max-width: 605px) {
+      header.blog-header .left-titles {
+        margin-bottom: 15px;
+        border-left: 0;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #7d7d7d; } }
+    header.blog-header .left-titles h1 {
+      font-weight: 200;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 2em; }
+    header.blog-header .left-titles h2 {
+      margin: 0;
+      padding: 5px 0 0 0;
+      color: #6aff46;
+      font-weight: 700; }
+  header.blog-header .right-description p {
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    transition: .3s ease-in-out; }
+    @media (max-width: 605px) {
+      header.blog-header .right-description p {
+        font-size: 1.1em; } }
