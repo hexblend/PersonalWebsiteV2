@@ -1,8 +1,7 @@
 Modern Personal Website
 =============================
 
-A dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
-This website wis made using Jekyll, styled with Sass and scripted with Vanilla Javascript.
+This website is made using Jekyll, styled with Sass and scripted with Vanilla Javascript. It's a dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
 
 ![](preview.jpg)
 
