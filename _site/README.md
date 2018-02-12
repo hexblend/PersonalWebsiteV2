@@ -1,13 +1,9 @@
-<!-- jekyll-gulp-sass-browser-sync
+Modern Personal Portfolio Website
 =============================
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
+A dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
+![](preview.jpg)
 
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
-
-And here's a GIF showing the CSS injecting.
-
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif) -->
 
 ## System Preparation
 
