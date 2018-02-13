@@ -1,0 +1,18 @@
+.post-container{
+  background: $box-bg;
+  padding: 10px 20px 30px 20px;
+  margin: -60px 250px 20px 250px;
+  position: relative;
+  color: #a7a6a6;
+  letter-spacing: 0;
+  overflow: auto;
+  transition: .3s ease-in-out;
+
+
+  @media(max-width: 1000px){
+    margin:-60px 100px 20px 100px;
+  }
+  @media(max-width: 605px){
+    margin:-60px 0px 30px 0px;
+  }
+}
