@@ -530,7 +530,8 @@ header.blog-header {
   margin: -60px 250px 20px 250px;
   position: relative;
   color: #a7a6a6;
-  letter-spacing: 0;
+  letter-spacing: 1px;
+  font-weight: 200;
   overflow: auto;
   transition: .3s ease-in-out; }
   @media (max-width: 1000px) {
