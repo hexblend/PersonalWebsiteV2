@@ -1,0 +1,5 @@
+---
+hide_body: false
+fields:
+- type: file
+- type: text
