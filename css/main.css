@@ -568,13 +568,12 @@ header.blog-header {
     font-weight: normal;
     color: #fff; }
   .post-container h1 {
-    margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 700; }
   .post-container h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-weight: 00; }
+    font-weight: 700; }
   .post-container h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -591,7 +590,8 @@ header.blog-header {
     font-weight: 700; }
   .post-container p {
     margin-top: 0;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    letter-spacing: 0; }
   .post-container a {
     background-image: linear-gradient(#449, #449);
     background-size: 0.06em 0.06em;
@@ -632,21 +632,21 @@ header.blog-header {
     font-size: 95%;
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
-    color: #666; }
+    color: #d6d6d6; }
   .post-container pre {
     background: #454251;
     display: block;
     margin: 1rem -2rem;
     padding: 1rem 2rem;
-    border-top: 2px solid #69657b;
-    border-bottom: 2px solid #69657b; }
+    font-family: "Roboto Mono", monospace; }
   .post-container p code {
     padding: 0 0.2em 0.1em;
     background-color: #454251 !important;
     display: inline-block;
     text-indent: 0px;
-    color: #fff;
-    white-space: pre; }
+    color: #d6d6d6;
+    white-space: pre;
+    font-family: "Roboto Mono", monospace; }
   .post-container p var {
     padding: 0 0.2em 0.1em;
     background-color: #eee;
@@ -809,5 +809,5 @@ header.blog-header {
     height: 0;
     width: 10rem;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #7d7d7d;
     margin: 2rem auto; }

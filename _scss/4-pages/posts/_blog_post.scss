@@ -36,7 +36,6 @@
   }
 
   h1 {
-      margin-top: 1rem;
       margin-bottom: 1rem;
       font-weight: 700;
       // font-size: 3.25rem;
@@ -45,7 +44,7 @@
   h2 {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-weight: 00;
+      font-weight: 700;
       // font-size: 2.5rem;
   }
 
@@ -78,6 +77,7 @@
   p {
       margin-top: 0;
       margin-bottom: 1rem;
+      letter-spacing: 0;
   }
 
   a {
@@ -132,7 +132,7 @@
       font-size: 95%;
       font-family: "Roboto Mono", monospace;
       font-weight: 300;
-      color: #666;
+      color: lighten($grey, 35%);
   }
 
   pre {
@@ -140,8 +140,7 @@
     display: block;
     margin: 1rem -2rem;
     padding: 1rem 2rem;
-    border-top: 2px solid lighten($box-bg, 20%);
-    border-bottom: 2px solid lighten($box-bg, 20%);
+    font-family: "Roboto Mono", monospace;
   }
 
   p code {
@@ -149,8 +148,9 @@
       background-color: lighten($box-bg, 5%) !important;
       display: inline-block;
       text-indent: 0px;
-      color: $white;
+      color: lighten($grey, 35%);
       white-space: pre;
+      font-family: "Roboto Mono", monospace;
   }
 
   p var {
@@ -374,7 +374,7 @@
       height: 0;
       width: 10rem;
       border: 0;
-      border-bottom: 1px solid rgba(0,0,0,1);
+      border-bottom: 1px solid $grey;
       margin: 2rem auto;
   }
 

@@ -45,8 +45,7 @@ For new TYPO3 installations, there's a 1-click [Aimeos distribution](https://typ
 ### Composer
 
 The latest version can be installed via composer too. This is especially useful if you want to create new TYPO3 installations automatically or play with the latest code. You need to install the [composer](https://getcomposer.org/) package first if it isn't already available:
-```
-php -r "readfile('https://getcomposer.org/installer');" | php -- --filename=composer
+```php -r "readfile('https://getcomposer.org/installer');" | php -- --filename=composer
 ```
 
 In order to tell composer what it should install, you have to create a basic `composer.json` file in the directory of you VHost. It should look similar to this one:
@@ -77,7 +76,7 @@ In order to tell composer what it should install, you have to create a basic `co
         ]
     }
 }
-```
+```<br><hr>
 It will install TYPO3 and the latest Aimeos TYPO3 extension in the `./htdocs/` directory. Afterwards, the Aimeos composer script will be executed which copies some required files and adds a link to the Aimeos extensions placed in the `./ext/` directory. To start installation, execute composer on the command line in the directory where your `composer.json` is stored:
 `composer update`
 
