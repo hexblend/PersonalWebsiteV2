@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "Github Repository for this One-Page App"
+title: "Github Repository for this Dynamic Web App"
 permalink: /blog/:title.html
 
 ---
