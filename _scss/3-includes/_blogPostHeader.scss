@@ -7,6 +7,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media(max-width: 840px){
+    height: auto;
+    overflow: visible;
+    padding-bottom: 20px;
+  }
 
   a {
     position: absolute;
@@ -26,12 +31,18 @@
 
   }
   h1{
-    margin: 70px 0 0 0;
+    margin: 60px 0 0 0;
     font-weight: 200;
     color: $white;
+    line-height: 1.2em;
+    text-align: center;
+    @media(max-width: 840px){
+      font-size: 1.8em;
+      padding: 0 5px;
+    }
   }
   p {
-    margin: 15px 0 0 0;
+    margin: 5px 0 0 0;
     font-weight: 700;
     letter-spacing: 2px;
     color: $green;
