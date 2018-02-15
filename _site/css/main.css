@@ -508,7 +508,8 @@ header.blog-header {
     color: #6aff46;
     font-weight: 700;
     font-size: 5em;
-    text-align: center; }
+    text-align: center;
+    transition: .3s ease-in-out; }
     @media (max-width: 870px) {
       .home-landing .left-elements .titles h1 {
         font-size: 4em;
@@ -522,15 +523,16 @@ header.blog-header {
                 transform: scale(0.9); } }
   .home-landing .left-elements .titles h2 {
     margin: 0;
-    padding: 30px 0 0 0;
+    padding: 35px 0 0 0;
     color: #fff;
     font-weight: 200;
     float: right;
-    font-size: 2em; }
+    font-size: 2em;
+    transition: .3s ease-in-out; }
     @media (max-width: 870px) {
       .home-landing .left-elements .titles h2 {
         font-size: 1.6em;
-        padding: 30px 0 0 20px;
+        padding: 30px 0 0 30px;
         float: none;
         text-align: center; } }
     @media (max-width: 338px) {
@@ -541,49 +543,114 @@ header.blog-header {
         -webkit-transform: scale(0.9);
                 transform: scale(0.9);
         margin-right: 15px; } }
-  @media (max-width: 1150px) {
-    .home-landing .right-elements {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9); } }
-  @media (max-width: 870px) {
-    .home-landing .right-elements {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7); } }
-  @media (max-height: 700px) {
-    .home-landing .right-elements {
-      -webkit-transform: scale(0.7);
-              transform: scale(0.7); } }
-  .home-landing .right-elements .logobox-border {
-    height: 550px;
-    width: 340px;
-    border: 12px solid #000;
-    background: transparent; }
+  .home-landing .devider {
+    height: 1px;
+    background: #7d7d7d;
+    width: 100px;
+    margin-top: 55px;
+    display: none; }
     @media (max-width: 870px) {
-      .home-landing .right-elements .logobox-border {
-        display: none; } }
-  .home-landing .right-elements .logobox-bg {
-    height: 500px;
-    width: 350px;
-    background: #6aff46;
-    position: absolute;
-    margin-top: 35px;
-    right: 18%; }
+      .home-landing .devider {
+        display: block; } }
+  .home-landing .right-elements {
+    transition: .3s ease-in-out; }
+    @media (max-width: 1150px) {
+      .home-landing .right-elements {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9); } }
     @media (max-width: 870px) {
-      .home-landing .right-elements .logobox-bg {
-        position: relative;
-        right: 0;
-        height: 100px;
-        width: 450px;
-        margin: 20px 0 0 0px; } }
-    @media (max-width: 338px) {
-      .home-landing .right-elements .logobox-bg {
-        -webkit-transform: scale(0.8);
-                transform: scale(0.8); } }
+      .home-landing .right-elements {
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7); } }
+    @media (max-height: 700px) {
+      .home-landing .right-elements {
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7); } }
+    .home-landing .right-elements .logobox-border {
+      height: 550px;
+      width: 340px;
+      border: 12px solid #000;
+      background: transparent; }
+      @media (max-width: 870px) {
+        .home-landing .right-elements .logobox-border {
+          display: none; } }
+    .home-landing .right-elements a {
+      text-decoration: none; }
+    .home-landing .right-elements .logobox-bg {
+      height: 500px;
+      width: 350px;
+      background: #6aff46;
+      position: absolute;
+      margin-top: 35px;
+      right: 18%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
+      transition: .3s ease-in-out; }
+      .home-landing .right-elements .logobox-bg:hover {
+        -webkit-transform: scale(1.025);
+                transform: scale(1.025); }
+      .home-landing .right-elements .logobox-bg:hover h2 {
+        font-size: 1.7em; }
+      .home-landing .right-elements .logobox-bg:hover .shadow_logo {
+        width: 85%; }
+      @media (max-width: 870px) {
+        .home-landing .right-elements .logobox-bg {
+          position: relative;
+          right: 0;
+          height: 90px;
+          width: 400px;
+          margin: 20px 0 0 0px;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -ms-flex-align: center;
+              align-items: center;
+          border-radius: 3px; }
+          .home-landing .right-elements .logobox-bg:hover {
+            -webkit-transform: scale(1.025);
+                    transform: scale(1.025); }
+          .home-landing .right-elements .logobox-bg:hover h2 {
+            font-size: 1.7em; }
+          .home-landing .right-elements .logobox-bg:hover .shadow_logo {
+            width: 100px; } }
+      @media (max-width: 338px) {
+        .home-landing .right-elements .logobox-bg {
+          -webkit-transform: scale(0.8);
+                  transform: scale(0.8); } }
+      .home-landing .right-elements .logobox-bg .shadow_logo {
+        margin-bottom: -40px;
+        margin-top: 20px;
+        width: 80%;
+        -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        transition: .3s ease-in-out; }
+        @media (max-width: 870px) {
+          .home-landing .right-elements .logobox-bg .shadow_logo {
+            -webkit-transform: rotate(-2deg);
+                    transform: rotate(-2deg);
+            width: 90px;
+            margin: 0; } }
+      .home-landing .right-elements .logobox-bg h2 {
+        text-decoration: none !important;
+        text-align: center;
+        color: #000;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-size: 1.6em;
+        transition: .3s ease-in-out; }
 
 .portfolio-section {
   min-height: 100vh;
-  margin-top: -20px;
-  background: #000; }
+  margin-top: -20px; }
 
 .blog-wrapper {
   padding: 0 150px;

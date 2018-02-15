@@ -1,3 +1,4 @@
+// Landing Section
 .home-landing {
   margin-top: -15px;
   width: 100vw;
@@ -23,6 +24,7 @@
         font-weight: 700;
         font-size: 5em;
         text-align: center;
+        transition: .3s ease-in-out;
         @media(max-width: 870px){
           font-size: 4em;
           padding: 0 0 0 20px;
@@ -36,14 +38,15 @@
       }
       h2 {
         margin: 0;
-        padding: 30px 0 0 0;
+        padding: 35px 0 0 0;
         color: $white;
         font-weight: 200;
         float: right;
         font-size: 2em;
+        transition: .3s ease-in-out;
         @media(max-width: 870px){
           font-size: 1.6em;
-          padding: 30px 0 0 20px;
+          padding: 30px 0 0 30px;
           float: none;
           text-align: center;
         }
@@ -57,6 +60,16 @@
       }
     }
   }
+  .devider{
+    height: 1px;
+    background: $grey;
+    width: 100px;
+    margin-top: 55px;
+    display: none;
+    @media(max-width: 870px){
+      display: block;
+    }
+  }
   .right-elements {
     @media(max-width: 1150px){
       transform: scale(0.9);
@@ -67,6 +80,7 @@
     @media(max-height: 700px){
       transform: scale(0.7);
     }
+    transition: .3s ease-in-out;
     .logobox-border {
       height: 550px;
       width: 340px;
@@ -76,6 +90,9 @@
         display: none;
       }
     }
+    a {
+      text-decoration: none;
+    }
     .logobox-bg{
       height: 500px;
       width: 350px;
@@ -83,21 +100,72 @@
       position: absolute;
       margin-top: 35px;
       right: 18%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: .3s ease-in-out;
+      &:hover {
+        transform: scale(1.025);
+      }
+      &:hover h2{
+        font-size: 1.7em;
+      }
+      &:hover .shadow_logo{
+        width: 85%;
+      }
       @media(max-width: 870px){
         position: relative;
         right: 0;
-        height: 100px;
-        width: 450px;
+        height: 90px;
+        width: 400px;
         margin: 20px 0 0 0px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 3px;
+
+        &:hover {
+          transform: scale(1.025);
+        }
+        &:hover h2{
+          font-size: 1.7em;
+        }
+        &:hover .shadow_logo{
+          width: 100px;
+        }
       }
       @media(max-width: 338px){
         transform: scale(0.8);
       }
+      .shadow_logo {
+        margin-bottom: -40px;
+        margin-top: 20px;
+        width: 80%;
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+        transition: .3s ease-in-out;
+        @media(max-width: 870px){
+          transform: rotate(-2deg);
+          width: 90px;
+          margin: 0;
+        }
+      }
+      h2 {
+        text-decoration: none !important;
+        text-align: center;
+        color: $black;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-size: 1.6em;
+        transition: .3s ease-in-out;
+      }
     }
   }
 }
+
+// Portfolio Section
 .portfolio-section {
   min-height: 100vh;
   margin-top: -20px;
-  background: $black;
 }
