@@ -16,10 +16,16 @@
     </svg>
   </a></div>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="/blog.html">Blog</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+    <!-- Jekyll -->
+    {% for item in site.navigation %}
+      {% assign class = nil %}
+      {% if page.url contains item.url %}
+          {% assign class = 'active' %}
+      {% endif %}
+      <li><a href="{{ item.url }}" class="{{ class }}">
+          {{ item.title }}
+      </a><li>
+    {% endfor %}
   </ul>
   <ul class="nav-social">
     <li><a href="https://www.facebook.com/vladbibire" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -31,8 +37,15 @@
 
 <div class="side-nav" id="side-menu">
   <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-  <li><a href="index.html" class="m-active">Home</a></li>
-  <li><a href="/blog.html">Blog</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Contact</a></li>
+
+  <!-- Jekyll -->
+  {% for item in site.navigation %}
+    {% assign class = nil %}
+    {% if page.url contains item.url %}
+        {% assign class = 'm-active' %}
+    {% endif %}
+    <li><a href="{{ item.url }}" class="{{ class }}">
+        {{ item.title }}
+    </a><li>
+  {% endfor %}
 </div>

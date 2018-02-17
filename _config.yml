@@ -2,3 +2,12 @@ name: Vlad Bibire - Web Development, Design
 markdown: redcarpet
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+navigation:
+  - title: home
+    url: /index.html
+  - title: blog
+    url: /blog.html
+  - title: about
+    url: /about.html
+  - title: contact
+    url: /contact.html
