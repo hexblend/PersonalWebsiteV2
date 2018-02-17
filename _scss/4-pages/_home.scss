@@ -1,8 +1,7 @@
 // Landing Section
 .home-landing {
-  margin-top: -15px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 50px);
   background: url('../img/main-bg.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
@@ -167,5 +166,4 @@
 // Portfolio Section
 .portfolio-section {
   min-height: 100vh;
-  margin-top: -20px;
 }
