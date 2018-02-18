@@ -491,7 +491,7 @@ nav {
   -ms-flex-direction: row;
       flex-direction: row;
   padding: 0 100px;
-  z-index: 10; }
+  z-index: 49; }
   nav .open-slide {
     display: none; }
     nav .open-slide a {
@@ -587,8 +587,8 @@ nav {
   width: 0;
   position: fixed;
   z-index: 11;
-  top: 0;
   left: 0;
+  top: 0;
   background: #000;
   opacity: 0.94;
   overflow-x: hidden;
@@ -608,6 +608,12 @@ nav {
   @media (max-height: 800px) {
     .side-nav {
       line-height: 50px; } }
+  @media (max-height: 571px) {
+    .side-nav {
+      line-height: 25px; } }
+  @media (max-height: 470px) {
+    .side-nav {
+      line-height: 0; } }
   .side-nav .btn-close {
     text-decoration: none;
     color: #b0b0b0;

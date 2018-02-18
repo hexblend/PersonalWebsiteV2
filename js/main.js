@@ -1,22 +1,25 @@
 // Side Nav
+var sideMenu = document.getElementById('side-menu');
+
 function openSideMenu(){
-  document.getElementById('side-menu').style.width = '90%';
+  sideMenu.style.width = '91%';
+  sideMenu.style.boxShadow = "50px 1px 500px 2px rgba(0,0,0,0.7)";
   document.body.style.overflowY = "hidden";
 }
 function closeSideMenu(){
-  document.getElementById('side-menu').style.width = '0';
+  sideMenu.style.width = '0';
+  sideMenu.style.boxShadow = "none";
   document.body.style.overflowY = "visible";
 }
 
-// Nav Fixed Top
-window.onscroll = function(){fixedNav()};
-var navigation = document.getElementById('navigation');
-var sticky = navigation.offsetTop;
-function fixedNav(){
-  if (window.pageYOffset >= sticky){
-    navigation.classList.add('fixed');
-    document.getElementById('blog-header').style.marginTop = '50px';
-  } else {
-    navigation.classList.remove('fixed');
-  }
-}
+$(document).ready(function(){
+    // Sticky Nav
+    $("#sticker").sticky({topSpacing:0});
+
+    // Smooth Scrolling
+    $("#scroll-btn").click(function(){
+      $('html, body').animate({
+          scrollTop: $("#portfolio").offset().top
+      }, 800);
+    });
+});

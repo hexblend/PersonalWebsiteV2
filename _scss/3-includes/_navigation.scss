@@ -5,7 +5,7 @@ nav {
   align-items: center;
   flex-direction: row;
   padding: 0 100px;
-  z-index: 10;
+  z-index: 49;
 
   .open-slide {
     display: none;
@@ -123,8 +123,8 @@ nav {
   width: 0;
   position: fixed;
   z-index: 11;
-  top: 0;
   left: 0;
+  top: 0;
   background: $black;
   opacity: 0.94;
   overflow-x: hidden;
@@ -138,6 +138,12 @@ nav {
   justify-content: center;
   @media(max-height: 800px){
     line-height: 50px;
+  }
+  @media(max-height: 571px){
+    line-height: 25px;
+  }
+  @media(max-height: 470px){
+    line-height: 0;
   }
   .btn-close {
     text-decoration: none;
