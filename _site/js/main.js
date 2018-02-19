@@ -2,7 +2,7 @@
 var sideMenu = document.getElementById('side-menu');
 
 function openSideMenu(){
-  sideMenu.style.width = '91%';
+  sideMenu.style.width = '92%';
   sideMenu.style.boxShadow = "50px 1px 500px 2px rgba(0,0,0,0.7)";
   document.body.style.overflowY = "hidden";
 }
@@ -20,6 +20,6 @@ $(document).ready(function(){
     $("#scroll-btn").click(function(){
       $('html, body').animate({
           scrollTop: $("#portfolio").offset().top
-      }, 800);
+      }, 600);
     });
 });

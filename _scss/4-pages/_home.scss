@@ -162,8 +162,156 @@
     }
   }
 }
-
 // Portfolio Section
 .portfolio-section {
   min-height: 100vh;
+
+  .portfolio-content {
+    padding: 0 100px;
+    @media(max-width: 870px){
+      text-align: center;
+      padding: 0 50px;
+    }
+    @media(max-width: 605px) {
+      padding: 0 15px;
+    }
+
+    h2.portfolioTitle{
+      margin-top: 70px;
+      color: $green;
+      border-bottom: 3px solid $green;
+      display: inline-block;
+      padding-bottom: 8px;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      @media(max-width: 870px){
+        flex-direction: column;
+      }
+
+    }
+    .project {
+      height: 200px;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      transition: .2s ease-in-out;
+      &:hover .mask {
+        background: rgba(43,41,51,0.9);
+      }
+      &:hover h2 {
+        margin-top: -15px;
+        z-index: 0;
+      }
+      &:hover .buttons-area{
+        padding-top: 70px;
+        opacity: 100;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        z-index: -1;
+      }
+
+      h2 {
+        color: $white;
+        text-align: center;
+        padding: 10px;
+        border: 0;
+        font-weight: 200;
+        letter-spacing: 1px;
+        transition: .2s ease-in-out;
+        position: absolute;
+        z-index: -1;
+        margin-top: 0;
+      }
+      .mask{
+        width: 100%;
+        height: 200px;
+        transition: .2s ease-in-out;
+        background: rgba(43,41,51,0);
+        position: absolute;
+        z-index: -1;
+        transition: .2s ease-in-out;
+      }
+      .buttons-area {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        opacity: 0;
+        transition: .2s ease-in-out;
+        position: absolute;
+
+        .proj-btnOne{
+          text-decoration: none;
+          margin-right: 20px;
+          color: $green;
+          border: 1px solid $green;
+          border-radius: 10px;
+          padding: 5px 25px;
+          font-weight: 200;
+          font-size: .7em;
+          &:hover {
+            background: $green;
+            color: $black;
+          }
+        }
+        .proj-btnTwo{
+          text-decoration: none;
+          color: $green;
+          border-radius: 10px;
+          background: $body-bg;
+          color: $grey;
+          padding: 7px 40px;
+          font-weight: 200;
+          font-size: .8em;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+
+
+    .project1 {
+      width: 60%;
+      @media(max-width: 870px){
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .project2 {
+      width: 38%;
+      @media(max-width: 870px){
+        width: 100%;
+      }
+    }
+
+    .project3 {
+      width: 38%;
+      @media(max-width: 870px){
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .project4 {
+      width: 60%;
+      @media(max-width: 870px){
+        width: 100%;
+      }
+    }
+  }
 }
