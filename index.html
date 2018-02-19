@@ -49,48 +49,57 @@ permalink: /index.html
   {% include navigation.html %}
   <div class="portfolio-content">
     <h2 class="portfolioTitle">Portfolio</h2>
-    <div class="row">
-      <div class="project project1">
-        <img src="img/plm.jpg" alt="Project 1 Thumbnail">
-        <h2>Project Title 1</h2>
-        <div class="mask"></div>
-        <div class="buttons-area">
-          <a href="#" target="_blank" class="proj-btnOne">Live Preview</a>
-          <a href="#" class="proj-btnTwo">Details</a>
-        </div>
-      </div>
 
-      <div class="project project2">
-        <img src="img/plm.jpg" alt="Project 2 Thumbnail">
-        <h2>Project Title 2</h2>
+    <div class="row">
+      {% for post in site.categories.firstproject %}
+      <div class="project project1">
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }} Thumbnail">
+        <h2>{{ post.title }}</h2>
         <div class="mask"></div>
         <div class="buttons-area">
-          <a href="#" target="_blank" class="proj-btnOne">Live Preview</a>
-          <a href="#" class="proj-btnTwo">Details</a>
+          <a href="{{ post.previewlink }}" target="_blank" class="proj-btnOne">Live Preview</a>
+          <a href="{{ post.url }}" class="proj-btnTwo">Details</a>
         </div>
       </div>
+      {% endfor %}
+
+      {% for post in site.categories.secondproject %}
+      <div class="project project2">
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }} Thumbnail">
+        <h2>{{ post.title }}</h2>
+        <div class="mask"></div>
+        <div class="buttons-area">
+          <a href="{{ post.previewlink }}" target="_blank" class="proj-btnOne">Live Preview</a>
+          <a href="{{ post.url }}" class="proj-btnTwo">Details</a>
+        </div>
+      </div>
+      {% endfor %}
     </div>
 
     <div class="row">
+      {% for post in site.categories.thirdproject %}
       <div class="project project3">
-        <img src="img/plm.jpg" alt="Project 3 Thumbnail">
-        <h2>Project Title 3</h2>
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }} Thumbnail">
+        <h2>{{ post.title }}</h2>
         <div class="mask"></div>
         <div class="buttons-area">
-          <a href="#" target="_blank" class="proj-btnOne">Live Preview</a>
-          <a href="#" class="proj-btnTwo">Details</a>
+          <a href="{{ post.previewlink }}" target="_blank" class="proj-btnOne">Live Preview</a>
+          <a href="{{ post.url }}" class="proj-btnTwo">Details</a>
         </div>
       </div>
+      {% endfor %}
 
+      {% for post in site.categories.fourthproject %}
       <div class="project project4">
-        <img src="img/plm.jpg" alt="Project 4 Thumbnail">
-        <h2>Project Title 4</h2>
+        <img src="{{ post.thumbnail }}" alt="{{ post.title }} Thumbnail">
+        <h2>{{ post.title }}</h2>
         <div class="mask"></div>
         <div class="buttons-area">
-          <a href="#" target="_blank" class="proj-btnOne">Live Preview</a>
-          <a href="#" class="proj-btnTwo">Details</a>
+          <a href="{{ post.previewlink }}" target="_blank" class="proj-btnOne">Live Preview</a>
+          <a href="{{ post.url }}" class="proj-btnTwo">Details</a>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>

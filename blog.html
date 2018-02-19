@@ -8,7 +8,7 @@ permalink: /blog.html
 
 <div class="blog-wrapper">
 
-  {% for post in site.posts %}
+  {% for post in site.categories.blogpost %}
   <a href="{{ post.url }}"><div class="postprev-container">
     <h3>{{ post.title }}</h3>
     <p>{{ post.content | strip_html | truncatewords: 60 }}</p>

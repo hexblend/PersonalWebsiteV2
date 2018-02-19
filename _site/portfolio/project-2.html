@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Portfolio Project 2 Vlad Bibire - Web Development, Design</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!--  Google Font  -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+
+        <header class="blogPostHeader">
+  <a href="../../../../../#portfolio"><i class="fas fa-angle-left"></i>Back to portfolio</a>
+  <h1>Portfolio Project 2</h1>
+  <p>08.09.2008</p>
+</header>
+
+
+<div class="post-container">
+  <h2>Portfolio Post 2</h2>
+
+<p>This document is for the latest Aimeos TYPO3 <strong>2017.10 release and later</strong>.</p>
+
+<ul>
+<li>Beta release: 2018.01 (TYPO3 7/8 LTS)</li>
+<li>LTS release: 2017.10 (TYPO3 6/7/8 LTS)</li>
+</ul>
+
+<h3>TYPO3 extension repository</h3>
+
+<p>If you want to install Aimeos into your existing TYPO3 installation, the <a href="https://typo3.org/extensions/repository/view/aimeos">Aimeos extension from the TER</a> is recommended. You can download and install it directly from the Extension Manager of your TYPO3 instance.</p>
+
+<p>For new TYPO3 installations, there&#39;s a 1-click <a href="https://typo3.org/extensions/repository/view/aimeos_dist">Aimeos distribution</a> available too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.</p>
+
+<h3>Composer</h3>
+
+<p>The latest version can be installed via composer too. This is especially useful if you want to create new TYPO3 installations automatically or play with the latest code. You need to install the <a href="https://getcomposer.org/">composer</a> package first if it isn&#39;t already available:
+<code>php -r &quot;readfile(&#39;https://getcomposer.org/installer&#39;);&quot; | php -- --filename=composer
+</code></p>
+
+<p>In order to tell composer what it should install, you have to create a basic <code>composer.json</code> file in the directory of you VHost. It should look similar to this one:
+<code>{
+    &quot;name&quot;: &quot;vendor/mysite&quot;,
+    &quot;description&quot; : &quot;My new TYPO3 web site&quot;,
+    &quot;minimum-stability&quot;: &quot;dev&quot;,
+    &quot;prefer-stable&quot;: true,
+    &quot;repositories&quot;: [
+        { &quot;type&quot;: &quot;composer&quot;, &quot;url&quot;: &quot;https://composer.typo3.org/&quot; }
+    ],
+    &quot;require&quot;: {
+        &quot;typo3/cms&quot;: &quot;~8.7&quot;,
+        &quot;aimeos/aimeos-typo3&quot;: &quot;~2017.10&quot;
+    },
+    &quot;extra&quot;: {
+        &quot;typo3/cms&quot;: {
+            &quot;cms-package-dir&quot;: &quot;{$vendor-dir}/typo3/cms&quot;,
+            &quot;web-dir&quot;: &quot;htdocs&quot;
+        }
+    },
+    &quot;scripts&quot;: {
+        &quot;post-install-cmd&quot;: [
+            &quot;Aimeos\\Aimeos\\Custom\\Composer::install&quot;
+        ],
+        &quot;post-update-cmd&quot;: [
+            &quot;Aimeos\\Aimeos\\Custom\\Composer::install&quot;
+        ]
+    }
+}
+</code><br><hr>
+It will install TYPO3 and the latest Aimeos TYPO3 extension in the <code>./htdocs/</code> directory. Afterwards, the Aimeos composer script will be executed which copies some required files and adds a link to the Aimeos extensions placed in the <code>./ext/</code> directory. To start installation, execute composer on the command line in the directory where your <code>composer.json</code> is stored:
+<code>composer update</code></p>
+
+<h2>TYPO3 setup</h2>
+
+<h3>Extension</h3>
+
+<ul>
+<li>Log into the TYPO3 back end</li>
+<li>Click on &#39;&#39;Admin Tools::Extension Manager&#39;&#39; in the left navigation</li>
+<li>Click the icon with the little plus sign left from the Aimeos list entry (looks like a lego brick)</li>
+<li>If a pop-up opens (only TYPO3 4.x) choose &#39;&#39;Make updates&#39;&#39; and &quot;Close window&quot; after the installation is done</li>
+</ul>
+
+<p><strong>Caution:</strong> Install the <strong>RealURL extension before the Aimeos extension</strong> to get nice looking URLs. Otherwise, RealURL doesn&#39;t rewrite the parameters even if you install RealURL afterwards!</p>
+
+<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-extmngr-install.png" alt="Install Aimeos TYPO3 extension"></p>
+
+<h3>Database</h3>
+
+<p>Afterwards, you have to execute the update script of the extension to create the required database structure:</p>
+
+<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-extmngr-update-7.x.png" alt="Execute update script"></p>
+
+<h2>Page setup</h2>
+
+<p>The page setup for an Aimeos web shop is easy if you import the <a href="https://aimeos.org/fileadmin/download/Aimeos-pages_two-columns_2.1.6.t3d">standard page tree</a> into your TYPO3 installation.</p>
+
+<h3>Go to the import view</h3>
+
+<ul>
+<li>In Web::Page, root page (the one with the globe)</li>
+<li>Right click on the globe</li>
+<li>Move the cursor to &quot;Branch actions&quot;</li>
+<li>In the sub-menu, click on &quot;Import from .t3d&quot;</li>
+</ul>
+
+<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-menu.png" alt="Go to the import view"></p>
+
+<h3>Upload the page tree file</h3>
+
+<ul>
+<li>In the page import dialog</li>
+<li>Select the &quot;Upload&quot; tab (2nd one)</li>
+<li>Click on the &quot;Select&quot; dialog</li>
+<li>Choose the file you&#39;ve downloaded</li>
+<li>Press the &quot;Upload files&quot; button</li>
+</ul>
+
+<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-upload.png" alt="Upload the page tree file"></p>
+
+<h3>Import the uploaded page tree file</h3>
+
+<ul>
+<li>In Import / Export view</li>
+<li>Select the uploaded file from the drop-down menu</li>
+<li>Click on the &quot;Preview&quot; button</li>
+<li>The pages that will be imported are shown below</li>
+<li>Click on the &quot;Import&quot; button that has appeared</li>
+<li>Confirm to import the pages</li>
+</ul>
+
+<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-import.png" alt="Import the uploaded page tree file"></p>
+
+<p>Now you have a new page &quot;Shop&quot; in your page tree including all required sub-pages.</p>
+
+<h2>License</h2>
+
+<p>The Aimeos TYPO3 extension is licensed under the terms of the GPL Open Source
+license and is available for free.</p>
+
+<h2>Links</h2>
+
+<ul>
+<li><a href="https://aimeos.org/integrations/typo3-shop-extension/">Web site</a></li>
+<li><a href="https://aimeos.org/docs/TYPO3">Documentation</a></li>
+<li><a href="https://aimeos.org/help/typo3-extension-f16/">Forum</a></li>
+<li><a href="https://github.com/aimeos/aimeos-typo3/issues">Issue tracker</a></li>
+<li><a href="https://github.com/aimeos/aimeos-typo3">Source code</a></li>
+</ul>
+
+</div>
+
+
+
+        <footer>
+  <div class="website-desc">
+    <p>This website was made using Jekyll, styled with Sass and scripted with Javascript & JQuery.</p>
+    <a href="https://github.com/webexplained/ModernPersonalWebsite" target="_blank" class="button">
+      <span>
+        View source on <br>
+        <i class="fab fa-github"></i>
+      </span>
+    </a>
+  </div>
+  <div class="copyright-container">
+    <p>Copyright &copy;2018 Vlad Bibire.</p>
+  </div>
+</footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
