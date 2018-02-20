@@ -1,0 +1,71 @@
+.projectPostHeader {
+  height:400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media(max-width: 840px){
+    height: 400px;
+    overflow: hidden;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 50%;
+    width: 100%;
+    height: 1000px;
+    margin-top: -400px; /* Half the height */
+  }
+
+  .portfolio-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $black;
+    .project-logo{
+      position: absolute;
+      left:calc(50% - 15px);
+      line-height: 0;
+      a {
+        text-decoration: none;
+        .nav-logo {
+          fill: $white;
+          width: 40px;
+          transition: .2s ease-in-out;
+          &:hover {
+            width: 45px;
+            margin-right: -5px;
+          }
+        }
+      }
+    }
+
+    p {
+      color: $body-bg;
+      border-left: 1px solid $body-bg;
+      border-right: 1px solid $body-bg;
+      line-height: 50px;
+      padding: 0 20px;
+    }
+    .next-btn,
+    .prev-btn{
+      border-left: 1px solid $grey;
+      border-right: 1px solid $grey;
+      line-height: 50px;
+      padding: 0 20px;
+      transition: .2s ease-in-out;
+      color: lighten($grey, 10%);
+      &:hover {
+        color: $white;
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+        border-bottom: 0;
+        padding: 0 50px;
+      }
+    }
+  }
+}

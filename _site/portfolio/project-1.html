@@ -18,144 +18,90 @@
 
   <body>
 
-        <header class="blogPostHeader">
-  <a href="../../../../../#portfolio"><i class="fas fa-angle-left"></i>Back to portfolio</a>
-  <h1>Stylish JS Clock App</h1>
-  <p>08.09.2008</p>
+        <header class="projectPostHeader">
+  <nav class="portfolio-nav">
+    <!-- <a href=""></a> -->
+    
+    
+
+    
+        <p><i class="fas fa-chevron-left"></i></p>
+    
+
+    <div class="project-logo"><a href="/">
+      <svg version="1.1" class="nav-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 205 148.5" style="enable-background:new 0 0 205 148.5;" xml:space="preserve">
+      <g id="Logo_1">
+        <g>
+          <polygon points="76.7,0.1 93.4,0.1 9,64.5 58.1,148.2 42.5,148.2 0.2,64.5 		"/>
+          <path d="M129.1,0c0,0,47.4,14.2,47.4,36.4c0,15.3-47.4,27.7-47.4,27.7s43.4,17.8,43.4,41.9c0.1,21.9-79.1,42.1-79.1,42.1
+            c18.7,0,107.8,0.2,107.8-43.9c0-30.1-35.6-39.8-35.6-39.8c17.5-4.3,38.7-8.3,38.7-30.1C204.3,0,129.1,0,129.1,0z"/>
+        </g>
+        <polygon points="104.7,0 70.2,148.1 80.8,148.1 115.2,0 	"/>
+      </g>
+      </svg>
+    </a></div>
+
+    
+        <a href="/portfolio/project-2.html" class="next-btn"><i class="fas fa-chevron-right"></i></a>
+    
+
+  </nav>
+
+
+
+
+
+
+
+  <img src="/img/thumbnail-1.jpg" alt="Project Banner">
+  <!-- <h1>Stylish JS Clock App</h1>
+  <p>08.09.2008</p> -->
 </header>
 
 
-<div class="post-container">
-  <h2>Portfolio Post 1</h2>
+<div class="projectpost-container">
+  <h2>Simple JavaScript Clock App</h2>
 
-<p>This document is for the latest Aimeos TYPO3 <strong>2017.10 release and later</strong>.</p>
+<p>A very simple Realtime JavaScript Clock Application with Time Zones Edit</p>
 
-<ul>
-<li>Beta release: 2018.01 (TYPO3 7/8 LTS)</li>
-<li>LTS release: 2017.10 (TYPO3 6/7/8 LTS)</li>
-</ul>
-
-<h3>TYPO3 extension repository</h3>
-
-<p>If you want to install Aimeos into your existing TYPO3 installation, the <a href="https://typo3.org/extensions/repository/view/aimeos">Aimeos extension from the TER</a> is recommended. You can download and install it directly from the Extension Manager of your TYPO3 instance.</p>
-
-<p>For new TYPO3 installations, there&#39;s a 1-click <a href="https://typo3.org/extensions/repository/view/aimeos_dist">Aimeos distribution</a> available too. Choose the Aimeos distribution from the list of available distributions in the Extension Manager and you will get a completely set up shop system including demo data for a quick start.</p>
-
-<h3>Composer</h3>
-
-<p>The latest version can be installed via composer too. This is especially useful if you want to create new TYPO3 installations automatically or play with the latest code. You need to install the <a href="https://getcomposer.org/">composer</a> package first if it isn&#39;t already available:
-<code>php -r &quot;readfile(&#39;https://getcomposer.org/installer&#39;);&quot; | php -- --filename=composer
-</code></p>
-
-<p>In order to tell composer what it should install, you have to create a basic <code>composer.json</code> file in the directory of you VHost. It should look similar to this one:
-<code>{
-    &quot;name&quot;: &quot;vendor/mysite&quot;,
-    &quot;description&quot; : &quot;My new TYPO3 web site&quot;,
-    &quot;minimum-stability&quot;: &quot;dev&quot;,
-    &quot;prefer-stable&quot;: true,
-    &quot;repositories&quot;: [
-        { &quot;type&quot;: &quot;composer&quot;, &quot;url&quot;: &quot;https://composer.typo3.org/&quot; }
-    ],
-    &quot;require&quot;: {
-        &quot;typo3/cms&quot;: &quot;~8.7&quot;,
-        &quot;aimeos/aimeos-typo3&quot;: &quot;~2017.10&quot;
-    },
-    &quot;extra&quot;: {
-        &quot;typo3/cms&quot;: {
-            &quot;cms-package-dir&quot;: &quot;{$vendor-dir}/typo3/cms&quot;,
-            &quot;web-dir&quot;: &quot;htdocs&quot;
-        }
-    },
-    &quot;scripts&quot;: {
-        &quot;post-install-cmd&quot;: [
-            &quot;Aimeos\\Aimeos\\Custom\\Composer::install&quot;
-        ],
-        &quot;post-update-cmd&quot;: [
-            &quot;Aimeos\\Aimeos\\Custom\\Composer::install&quot;
-        ]
-    }
-}
-</code><br><hr>
-It will install TYPO3 and the latest Aimeos TYPO3 extension in the <code>./htdocs/</code> directory. Afterwards, the Aimeos composer script will be executed which copies some required files and adds a link to the Aimeos extensions placed in the <code>./ext/</code> directory. To start installation, execute composer on the command line in the directory where your <code>composer.json</code> is stored:
-<code>composer update</code></p>
-
-<h2>TYPO3 setup</h2>
-
-<h3>Extension</h3>
+<h3>Feautures</h3>
 
 <ul>
-<li>Log into the TYPO3 back end</li>
-<li>Click on &#39;&#39;Admin Tools::Extension Manager&#39;&#39; in the left navigation</li>
-<li>Click the icon with the little plus sign left from the Aimeos list entry (looks like a lego brick)</li>
-<li>If a pop-up opens (only TYPO3 4.x) choose &#39;&#39;Make updates&#39;&#39; and &quot;Close window&quot; after the installation is done</li>
+<li>Real Time Updating</li>
+<li>Native JavaScript functionality</li>
+<li>4 Default Timezones (you can add more)</li>
+<li>AM/PM or 24 hours switcher</li>
 </ul>
 
-<p><strong>Caution:</strong> Install the <strong>RealURL extension before the Aimeos extension</strong> to get nice looking URLs. Otherwise, RealURL doesn&#39;t rewrite the parameters even if you install RealURL afterwards!</p>
+<h3>Installing</h3>
 
-<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-extmngr-install.png" alt="Install Aimeos TYPO3 extension"></p>
+<p>Being just a static template, all you need to do is to <code>Clone/Download</code> this repository
+into your machine and then open <code>index.html</code> using your browser.</p>
 
-<h3>Database</h3>
-
-<p>Afterwards, you have to execute the update script of the extension to create the required database structure:</p>
-
-<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-extmngr-update-7.x.png" alt="Execute update script"></p>
-
-<h2>Page setup</h2>
-
-<p>The page setup for an Aimeos web shop is easy if you import the <a href="https://aimeos.org/fileadmin/download/Aimeos-pages_two-columns_2.1.6.t3d">standard page tree</a> into your TYPO3 installation.</p>
-
-<h3>Go to the import view</h3>
+<h3>Technologies Used</h3>
 
 <ul>
-<li>In Web::Page, root page (the one with the globe)</li>
-<li>Right click on the globe</li>
-<li>Move the cursor to &quot;Branch actions&quot;</li>
-<li>In the sub-menu, click on &quot;Import from .t3d&quot;</li>
+<li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+<li><a href="https://fonts.google.com/">Google Fonts</a></li>
 </ul>
 
-<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-menu.png" alt="Go to the import view"></p>
-
-<h3>Upload the page tree file</h3>
+<h3>Credits</h3>
 
 <ul>
-<li>In the page import dialog</li>
-<li>Select the &quot;Upload&quot; tab (2nd one)</li>
-<li>Click on the &quot;Select&quot; dialog</li>
-<li>Choose the file you&#39;ve downloaded</li>
-<li>Press the &quot;Upload files&quot; button</li>
+<li>Unsplash : <a href="https://unsplash.com/">https://unsplash.com/</a> - for background image source</li>
 </ul>
 
-<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-upload.png" alt="Upload the page tree file"></p>
-
-<h3>Import the uploaded page tree file</h3>
+<h3>Preview</h3>
 
 <ul>
-<li>In Import / Export view</li>
-<li>Select the uploaded file from the drop-down menu</li>
-<li>Click on the &quot;Preview&quot; button</li>
-<li>The pages that will be imported are shown below</li>
-<li>Click on the &quot;Import&quot; button that has appeared</li>
-<li>Confirm to import the pages</li>
+<li>Live: <a href="https://webexplained.github.io/Stylish-JS-Clock-WebApp/">https://webexplained.github.io/Stylish-JS-Clock-WebApp/</a>
+<img src="preview.png" alt=""></li>
 </ul>
 
-<p><img src="https://aimeos.org/docs/images/Aimeos-typo3-pages-import.png" alt="Import the uploaded page tree file"></p>
+<h3>License</h3>
 
-<p>Now you have a new page &quot;Shop&quot; in your page tree including all required sub-pages.</p>
-
-<h2>License</h2>
-
-<p>The Aimeos TYPO3 extension is licensed under the terms of the GPL Open Source
-license and is available for free.</p>
-
-<h2>Links</h2>
-
-<ul>
-<li><a href="https://aimeos.org/integrations/typo3-shop-extension/">Web site</a></li>
-<li><a href="https://aimeos.org/docs/TYPO3">Documentation</a></li>
-<li><a href="https://aimeos.org/help/typo3-extension-f16/">Forum</a></li>
-<li><a href="https://github.com/aimeos/aimeos-typo3/issues">Issue tracker</a></li>
-<li><a href="https://github.com/aimeos/aimeos-typo3">Source code</a></li>
-</ul>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
 
 </div>
 
