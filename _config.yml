@@ -1,5 +1,5 @@
 name: Vlad Bibire - Web Development, Design
-markdown: redcarpet
+# markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 navigation:
