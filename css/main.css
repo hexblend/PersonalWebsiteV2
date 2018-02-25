@@ -1244,7 +1244,7 @@ nav {
         .aboutme-wrapper .presentation-container .left-side {
           width: 100%; } }
       .aboutme-wrapper .presentation-container .left-side h2 {
-        font-size: 3.5em;
+        font-size: 3em;
         font-weight: 200;
         line-height: 1.2em;
         margin: 0;
@@ -1252,12 +1252,6 @@ nav {
         margin: 0 auto; }
         .aboutme-wrapper .presentation-container .left-side h2 span {
           font-weight: 700; }
-        @media (max-width: 1400px) {
-          .aboutme-wrapper .presentation-container .left-side h2 {
-            font-size: 3.5em; } }
-        @media (max-width: 1220px) {
-          .aboutme-wrapper .presentation-container .left-side h2 {
-            font-size: 3em; } }
         @media (max-width: 1100px) {
           .aboutme-wrapper .presentation-container .left-side h2 {
             font-size: 2.5em; } }
@@ -1297,10 +1291,6 @@ nav {
           margin-bottom: 30px; }
         @media (max-width: 1400px) {
           .aboutme-wrapper .presentation-container .right-side p {
-            font-size: 1.4em;
-            line-height: 1.5em; } }
-        @media (max-width: 1220px) {
-          .aboutme-wrapper .presentation-container .right-side p {
             font-size: 1.3em;
             line-height: 1.4em; } }
         @media (max-width: 1100px) {
@@ -1313,13 +1303,81 @@ nav {
         @media (max-width: 435px) {
           .aboutme-wrapper .presentation-container .right-side p {
             font-size: 1em; } }
+  .aboutme-wrapper h2.journey-title {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 2em; }
   .aboutme-wrapper .journey-container {
-    margin-top: 50px; }
-    .aboutme-wrapper .journey-container h2 {
-      text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    color: #fff; }
+    .aboutme-wrapper .journey-container .center-bar {
+      height: 470px;
+      width: 4px;
+      background: #fff;
+      border-radius: 10px;
       color: #fff;
-      font-weight: 200;
-      font-size: 2em; }
+      -ms-flex-order: 2;
+          order: 2; }
+      @media (max-width: 730px) {
+        .aboutme-wrapper .journey-container .center-bar {
+          -ms-flex-order: 1;
+              order: 1;
+          margin-right: -15px; } }
+    .aboutme-wrapper .journey-container .left-side {
+      -ms-flex-order: 1;
+          order: 1; }
+      @media (max-width: 730px) {
+        .aboutme-wrapper .journey-container .left-side {
+          -ms-flex-order: 2;
+              order: 2; } }
+      .aboutme-wrapper .journey-container .left-side ul {
+        direction: rtl; }
+        @media (max-width: 730px) {
+          .aboutme-wrapper .journey-container .left-side ul {
+            direction: ltr;
+            list-style: none; } }
+        .aboutme-wrapper .journey-container .left-side ul li {
+          text-align: right;
+          height: 80px;
+          margin-top: 110px; }
+          .aboutme-wrapper .journey-container .left-side ul li:first-child {
+            margin-top: -10px; }
+          @media (max-width: 870px) {
+            .aboutme-wrapper .journey-container .left-side ul li {
+              font-size: 0.9em; } }
+          @media (max-width: 730px) {
+            .aboutme-wrapper .journey-container .left-side ul li {
+              margin-top: 17px;
+              text-align: left; } }
+        .aboutme-wrapper .journey-container .left-side ul .right-el1,
+        .aboutme-wrapper .journey-container .left-side ul .right-el2 {
+          display: none; }
+          @media (max-width: 730px) {
+            .aboutme-wrapper .journey-container .left-side ul .right-el1,
+            .aboutme-wrapper .journey-container .left-side ul .right-el2 {
+              display: block; } }
+    .aboutme-wrapper .journey-container .right-side {
+      -ms-flex-order: 3;
+          order: 3; }
+      @media (max-width: 730px) {
+        .aboutme-wrapper .journey-container .right-side {
+          display: none; } }
+      .aboutme-wrapper .journey-container .right-side ul li {
+        height: 80px;
+        margin-top: 105px; }
+  .aboutme-wrapper h2.insta-title {
+    margin-top: 50px;
+    text-align: left;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5em; }
 
 .blog-wrapper {
   padding: 0 150px;
