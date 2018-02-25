@@ -6,7 +6,7 @@ header.blog-header {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
-  @media(max-width: 650px){
+  @media(max-width: 730px){
     text-align: center;
     flex-direction: column;
     height: auto;
@@ -18,7 +18,7 @@ header.blog-header {
     padding-left: 20px;
     line-height: 2em;
     transition: .3s ease-in-out;
-    @media(max-width: 650px){
+    @media(max-width: 730px){
       margin-bottom: 15px;
       border-left: 0;
       padding: 0 0 10px 0;
@@ -48,7 +48,7 @@ header.blog-header {
       margin: 0;
       padding: 0;
       transition: .3s ease-in-out;
-      @media(max-width: 650px){
+      @media(max-width: 730px){
         font-size: 1.1em;
       }
     }
