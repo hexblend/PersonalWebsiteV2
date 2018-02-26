@@ -69,8 +69,9 @@
       p {
         line-height: 1.7em;
         max-width: 1000px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: auto;
+        color: lighten($grey, 15%);
         &:first-child{
           margin-bottom: 30px;
         }
@@ -92,15 +93,21 @@
     }
   }
   h2.journey-title{
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
     color: $white;
     font-weight: 200;
     font-size: 2em;
+    @media(max-width: 730px){
+      margin-top: 60px;
+    }
   }
   .journey-container {
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
+    @media(max-width: 730px){
+      margin-bottom: 50px;
+    }
     display: flex;
     justify-content: center;
     color: $white;
@@ -166,9 +173,18 @@
   }
   h2.insta-title {
     margin-top: 50px;
+    @media(max-width: 730px){
+      margin-top: 0px;
+    }
     text-align: left;
     color: $white;
     font-weight: 200;
     font-size: 1.5em;
+  }
+  .instafeed-container {
+    margin-bottom: 100px;
+    @media(max-width: 730px){
+      margin-bottom: 60px;
+    }
   }
 }

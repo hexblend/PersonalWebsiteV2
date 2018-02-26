@@ -12,6 +12,21 @@ function closeSideMenu(){
   document.body.style.overflowY = "visible";
 }
 
+function mailConfirm(){
+  event.preventDefault();
+  var successBar = document.getElementById("submitted-container");
+  successBar.style.marginTop = 0;
+  var seconds = 2;
+  setInterval(function () {
+    seconds--;
+    if(seconds == 0) {
+      successBar.style.marginTop = '-50px';
+      window.location = "/index.html";
+    }
+  }, 1000);
+}
+
+
 $(document).ready(function(){
     // Sticky Nav
     $("#sticker").sticky({topSpacing:0});
