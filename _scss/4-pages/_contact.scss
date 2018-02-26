@@ -1,12 +1,17 @@
 #submitted-container{
   background: darken($green, 22%);
   width: 100%;
-  height: 50px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .2s ease-in-out;
-  margin-top: -50px;
+  margin-top: -55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
   p{
     color: $white;
     text-align: center;
@@ -57,11 +62,13 @@
       margin-bottom: 10px;
       &:hover{
         border: 1px solid darken($grey, 10%);
+        background: $box-bg;
       }
       &:focus{
         outline: none;
         box-shadow: 0;
         border: 1px solid $grey;
+        background: $box-bg;
       }
     }
     .form-message{
@@ -69,7 +76,9 @@
       height: 150px;
       resize: none;
       overflow: auto;
+      background: $box-bg;
       &:focus{
+        background: $box-bg;
         outline: none;
         box-shadow: 0;
       }

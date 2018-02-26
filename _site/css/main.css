@@ -674,7 +674,7 @@ header.blog-header {
 
 .navbar-wrap {
   position: relative;
-  z-index: 99999; }
+  z-index: 9999; }
 
 nav {
   background: #000;
@@ -1454,7 +1454,7 @@ nav {
 #submitted-container {
   background: #29d500;
   width: 100%;
-  height: 50px;
+  height: 55px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1462,7 +1462,12 @@ nav {
   -ms-flex-align: center;
       align-items: center;
   transition: .2s ease-in-out;
-  margin-top: -50px; }
+  margin-top: -55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000; }
   #submitted-container p {
     color: #fff;
     text-align: center; }
@@ -1512,19 +1517,23 @@ nav {
       .contact-wrapper .contact-form .form-name:hover,
       .contact-wrapper .contact-form .form-email:hover,
       .contact-wrapper .contact-form .form-message:hover {
-        border: 1px solid #646464; }
+        border: 1px solid #646464;
+        background: #393743; }
       .contact-wrapper .contact-form .form-name:focus,
       .contact-wrapper .contact-form .form-email:focus,
       .contact-wrapper .contact-form .form-message:focus {
         outline: none;
         box-shadow: 0;
-        border: 1px solid #7d7d7d; }
+        border: 1px solid #7d7d7d;
+        background: #393743; }
     .contact-wrapper .contact-form .form-message {
       margin-bottom: 0;
       height: 150px;
       resize: none;
-      overflow: auto; }
+      overflow: auto;
+      background: #393743; }
       .contact-wrapper .contact-form .form-message:focus {
+        background: #393743;
         outline: none;
         box-shadow: 0; }
   .contact-wrapper .submit-btn {
