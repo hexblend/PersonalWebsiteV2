@@ -1,5 +1,7 @@
 name: Vlad Bibire - Web Development, Design
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+markdown: kramdown
+highlighter: rouge
 navigation:
   - title: home
     url: /index.html
