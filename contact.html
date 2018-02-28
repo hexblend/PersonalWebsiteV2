@@ -2,6 +2,7 @@
 layout: default
 title: Contact |
 permalink: /contact.html
+page-description: Question? Job Offer? Write a message and you will get a response as soon as possible.
 ---
 <div id="submitted-container">
   <p>Success! Your message has been sent.</p>
@@ -21,13 +22,13 @@ permalink: /contact.html
   <h2>Let's get in touch!</h2>
   <p>Hey! Thanks for checking out my website. Have a thought? Leave it down below and I'll respond to you right away!</p>
 
-  <form action="https://getsimpleform.com/messages?form_api_token=e573ad496beaf6b05566d76b7e1a83b9" method="post" class="contact-form" onsubmit="mailConfirm()">
+  <form action="https://getsimpleform.com/messages?form_api_token=e573ad496beaf6b05566d76b7e1a83b9" method="post" onsubmit="mailConfirm()" class="contact-form" id="mail-form">
     <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
     <!-- <input type='hidden' name='redirect_to' onClick="mailConfirm()"> -->
     <!-- all your input fields here.... -->
     <input type='text' name='Name' placeholder='Name' class="form-name" required/>
     <input type='email' name='Email' placeholder='Email' class="form-email" required/>
     <textarea name='message' name="Message" placeholder='Message' class="form-message" required></textarea>
-    <input type='submit' value='Send' class="submit-btn"/>
+    <input type='submit' value='Send' class="submit-btn" id="form-submit"/>
   </form>
 </div>

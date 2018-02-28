@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114940666-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114940666-1');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Contact | Vlad Bibire - Web Development, Design</title>
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Question? Job Offer? Write a message and you will get a response as soon as possible.">
+    <meta name="robots" content="follow">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Contact |">
+    <meta itemprop="description" content="Question? Job Offer? Write a message and you will get a response as soon as possible.">
+    <meta itemprop="image" content="/preview.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_imag">
+    <meta name="twitter:site" content="@vladbbr">
+    <meta name="twitter:title" content="Contact |">
+    <meta name="twitter:description" content="Question? Job Offer? Write a message and you will get a response as soon as possible.">
+    <meta name="twitter:creator" content="@vladbbr">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="/preview.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Contact |" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vladb.uk" />
+    <meta property="og:image" content="/preview.jpg" />
+    <meta property="og:description" content="Question? Job Offer? Write a message and you will get a response as soon as possible." />
+    <meta property="og:site_name" content="Vlad Bibire - Web Development, Design" />
+
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 
     <!--  Google Font  -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
@@ -124,14 +179,14 @@
   <h2>Let's get in touch!</h2>
   <p>Hey! Thanks for checking out my website. Have a thought? Leave it down below and I'll respond to you right away!</p>
 
-  <form action="https://getsimpleform.com/messages?form_api_token=e573ad496beaf6b05566d76b7e1a83b9" method="post" class="contact-form" onsubmit="mailConfirm()">
+  <form action="https://getsimpleform.com/messages?form_api_token=e573ad496beaf6b05566d76b7e1a83b9" method="post" onsubmit="mailConfirm()" class="contact-form" id="mail-form">
     <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
     <!-- <input type='hidden' name='redirect_to' onClick="mailConfirm()"> -->
     <!-- all your input fields here.... -->
     <input type='text' name='Name' placeholder='Name' class="form-name" required/>
     <input type='email' name='Email' placeholder='Email' class="form-email" required/>
     <textarea name='message' name="Message" placeholder='Message' class="form-message" required></textarea>
-    <input type='submit' value='Send' class="submit-btn"/>
+    <input type='submit' value='Send' class="submit-btn" id="form-submit"/>
   </form>
 </div>
 
