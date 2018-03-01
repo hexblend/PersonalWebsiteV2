@@ -3,7 +3,7 @@ Modern Personal Website
 
 This website was made using Jekyll, styled with Sass and scripted with Vanilla Javascript. It's a dynamic multipage web application which incorporates a portfolio section, blog & posts, about and contact page.
 
-![](preview.jpg)
+![](preview2.jpg)
 
 
 ## System Preparation
