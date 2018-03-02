@@ -1,0 +1,392 @@
+// Landing Section
+.home-landing {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: url('../img/main-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media(max-width: 870px){
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-elements{
+    @media(max-width: 870px){
+      margin-left: -20px;
+    }
+    .titles{
+      h1 {
+        margin: 0;
+        padding: 0;
+        color: $green;
+        font-weight: 700;
+        font-size: 5em;
+        text-align: center;
+        transition: .3s ease-in-out;
+        @media(max-width: 870px){
+          font-size: 4em;
+          padding: 0 0 0 20px;
+        }
+        @media(max-width: 338px){
+          font-size: 3em;
+        }
+        @media(max-height: 700px){
+          transform: scale(0.9);
+        }
+      }
+      h2 {
+        margin: 0;
+        padding: 35px 0 0 0;
+        color: $white;
+        font-weight: 200;
+        float: right;
+        font-size: 2em;
+        transition: .3s ease-in-out;
+        @media(max-width: 870px){
+          font-size: 1.6em;
+          padding: 30px 0 0 30px;
+          float: none;
+          text-align: center;
+        }
+        @media(max-width: 338px){
+          font-size: 1.3em;
+        }
+        @media(max-height: 700px){
+          transform: scale(0.9);
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .devider{
+    height: 1px;
+    background: $grey;
+    width: 100px;
+    margin-top: 55px;
+    display: none;
+    @media(max-width: 870px){
+      display: block;
+    }
+  }
+  .right-elements {
+    @media(max-width: 1150px){
+      transform: scale(0.9);
+    }
+    @media(max-width: 870px){
+      transform: scale(0.7);
+    }
+    @media(max-height: 700px){
+      transform: scale(0.7);
+    }
+    transition: .3s ease-in-out;
+    .logobox-border {
+      height: 550px;
+      width: 340px;
+      border: 12px solid $black;
+      background: rgba(0,0,0,0);
+      @media(max-width: 870px){
+        display: none;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .logobox-bg{
+      height: 500px;
+      width: 350px;
+      background: $green;
+      position: absolute;
+      margin-top: 35px;
+      right: 18%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: .3s ease-in-out;
+      &:hover {
+        transform: scale(1.025);
+      }
+      &:hover h2{
+        font-size: 1.7em;
+      }
+      &:hover .shadow_logo{
+        width: 85%;
+      }
+      @media(max-width: 870px){
+        position: relative;
+        right: 0;
+        height: 90px;
+        width: 400px;
+        margin: 20px 0 0 0px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 3px;
+
+        &:hover {
+          transform: scale(1.025);
+        }
+        &:hover h2{
+          font-size: 1.7em;
+        }
+        &:hover .shadow_logo{
+          width: 100px;
+        }
+      }
+      @media(max-width: 338px){
+        transform: scale(0.8);
+      }
+      .shadow_logo {
+        margin-bottom: -40px;
+        margin-top: 20px;
+        width: 80%;
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+        transition: .3s ease-in-out;
+        @media(max-width: 870px){
+          transform: rotate(-2deg);
+          width: 90px;
+          margin: 0;
+        }
+      }
+      h2 {
+        text-decoration: none !important;
+        text-align: center;
+        color: $black;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-size: 1.6em;
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+}
+// Portfolio Section
+.portfolio-section {
+  .portfolio-content {
+    padding: 0 100px;
+    @media(max-width: 870px){
+      text-align: center;
+      padding: 0 50px;
+    }
+    @media(max-width: 605px) {
+      padding: 0 15px;
+    }
+
+    h2.portfolioTitle{
+      margin-top: 70px;
+      color: $green;
+      border-bottom: 3px solid $green;
+      display: inline-block;
+      padding-bottom: 8px;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      @media(max-width: 870px){
+        flex-direction: column;
+      }
+
+    }
+    .project {
+      height: 200px;
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      transition: .2s ease-in-out;
+      &:hover .mask {
+        background: rgba(43,41,51,0.75);
+      }
+      &:hover h2 {
+        margin-top: -15px;
+        z-index: 0;
+      }
+      &:hover .buttons-area{
+        padding-top: 70px;
+        opacity: 100;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        z-index: -1;
+      }
+
+      h2 {
+        color: $white;
+        text-align: center;
+        padding: 10px;
+        border: 0;
+        font-weight: 200;
+        letter-spacing: 1px;
+        transition: .2s ease-in-out;
+        position: absolute;
+        margin-top: 0;
+      }
+      .mask{
+        width: 100%;
+        height: 200px;
+        transition: .2s ease-in-out;
+        background: rgba(43,41,51,0);
+        position: absolute;
+        transition: .2s ease-in-out;
+      }
+      .buttons-area {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        opacity: 0;
+        transition: .2s ease-in-out;
+        position: absolute;
+
+        .proj-btnOne{
+          text-decoration: none;
+          margin-right: 20px;
+          color: $green;
+          border: 1px solid $green;
+          border-radius: 10px;
+          padding: 5px 25px;
+          font-weight: 200;
+          font-size: .7em;
+          &:hover {
+            background: $green;
+            color: $black;
+          }
+        }
+        .proj-btnTwo{
+          text-decoration: none;
+          color: $green;
+          border-radius: 10px;
+          background: $body-bg;
+          color: $grey;
+          padding: 7px 40px;
+          font-weight: 200;
+          font-size: .8em;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+    .project1 {
+      width: 60%;
+      background: url('../img/portfolio_project1_preview.jpg') no-repeat center center;
+      background-size: cover;
+      @media(max-width: 870px){
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .project2 {
+      width: 38%;
+      background: url('../img/portfolio_project2_preview.jpg') no-repeat center center;
+      background-size: cover;
+      @media(max-width: 870px){
+        width: 100%;
+      }
+    }
+
+    .project3 {
+      width: 38%;
+      background: url('../img/portfolio_project1_preview.jpg') no-repeat center center;
+      background-size: cover;
+      @media(max-width: 870px){
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .project4 {
+      width: 60%;
+      background: url('../img/portfolio_project1_preview.jpg') no-repeat center center;
+      background-size: cover;
+      @media(max-width: 870px){
+        width: 100%;
+      }
+    }
+  }
+  .devider {
+    width: 40%;
+    margin-left: 0;
+    height: 1px;
+    border: 0;
+    background: $grey;
+    margin: 30px 0;
+    @media(max-width: 870px){
+      margin: 30px auto;
+    }
+  }
+  .entire-portfolio-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    @media(max-width: 870px){
+      flex-direction: column;
+    }
+
+    .entire-github,
+    .entire-behance{
+      width: 49%;
+      background: $box-bg;
+      text-decoration: none;
+      color: $grey;
+      border: 1px solid darken($grey, 20%);
+      border-radius: 5px;
+      transition: .15s ease-in-out;
+      @media(max-width: 870px){
+        margin-bottom: 20px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        width: 100%;
+      }
+
+      &:hover {
+        border: 1px solid $grey;
+      }
+    }
+
+    .entire-github-wrapper,
+    .entire-behance-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px 0 20px;
+    }
+    .entire-github-wrapper{
+      p:first-child{
+        width: 150px;
+        text-align:center;
+        margin-left: -12px;
+        line-height: 1.4em;
+      }
+      p:last-child{
+        font-size: 3em;
+        margin:0;
+      }
+    }
+    .entire-behance-wrapper{
+      p:first-child{
+        width: 120px;
+        text-align:center;
+        line-height: 1.4em;
+      }
+      p:last-child{
+        font-size: 3em;
+        margin:0;
+      }
+    }
+  }
+}
