@@ -5,8 +5,8 @@ highlighter: rouge
 navigation:
   - title: home
     url: /index.html
-  - title: blog
-    url: /blog.html
+  # - title: blog
+  #   url: /blog.html
   - title: about
     url: /about.html
   - title: contact
